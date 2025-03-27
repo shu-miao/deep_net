@@ -114,7 +114,7 @@ class Optimizer_SGD:
     def update_params(self,layer):
         # 更新参数
         layer.weights += -self.learning_rate * layer.dweights # 权重-学习率*权重梯度
-        layer.biases += -self.learning_rate * layer.dbiases # 偏置-学习率*偏置权重
+        layer.biases += -self.learning_rate * layer.dbiases # 偏置-学习率*偏置梯度
 
 
 # 实例化
